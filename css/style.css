@@ -1,0 +1,742 @@
+/* ======== START GLOBAL STYLE ========= */
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --main-color:rgb(28, 28, 28);
+    --bg-main-light:#f8f9f1;
+}
+
+.main-color{
+    color: rgb(28, 28, 28);
+}
+.bg-main{
+    background-color: rgb(28, 28, 28);
+}
+.bg-main-light{
+    background-color: #fdfdfd;
+}
+.padding-section{
+    padding: 70px;
+}
+/* ======== END GLOBAL STYLE ========= */
+
+/* ========== Start Navar ============ */
+.navbar{
+    padding-top: 20px;
+}
+nav h1{
+    font-size: 18px;
+    font-weight:800 ;
+    line-height: 25.7143px;
+}
+nav .navbar-nav .nav-item {
+    font-size:14px ;
+    font-weight:400 ;
+    line-height:20px ;
+}
+nav .navbar-nav{
+     display: flex;
+    gap: 20px;
+}
+nav .navbar-nav .nav-link{
+    color: white;
+
+}
+nav .navbar-nav .nav-link.active{
+    color: white;
+}
+nav .navbar-nav .nav-item{
+    position: relative;
+}
+nav .navbar-nav .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 6px;
+    left: 4px;
+    transition: width 0.5s ease-in-out;
+}
+nav .navbar-nav .nav-link.active::after{
+    width: 80%;
+}
+
+
+.navbar-scrolled .navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-scrolled .navbar-nav .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 6px;
+    left: 4px;
+    transition: width 0.5s ease-in-out;
+}
+.navbar-scrolled .navbar-nav .nav-link.active::after{
+    width: 80%;
+}
+.navbar-scrolled{
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);    
+}
+.navbar-scrolled .nav-link{
+    color: #000 !important;
+}
+.navbar-scrolled h1 a{
+    color: #000 !important;
+
+}
+/* ========== End Navar ============ */
+
+
+/* ========== Start home css ============ */
+
+header{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.650),rgba(0,0,0,0.650)), url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home h5{
+    font-size:50px ;
+    font-weight: 800;
+    line-height: 55px;
+}
+.home h1 {
+    font-size:60px ;
+    font-weight: 200;
+    line-height: 72px; 
+}
+.home h1 span{
+    font-size:60px ;
+    font-weight: 400;
+    line-height: 72px; 
+}
+.home .home-icon{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 40px;
+    gap: 5px;
+}
+.home .home-icon .icon{
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 12, 18);
+}
+
+/* ========== End home css ============ */
+
+/* ========== start about css ============ */
+.about .dots{
+ position: relative;
+}
+.about .dots img{
+    padding: 0 0 0 30px;
+    z-index: 3;
+}
+.about .dots::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    z-index: -1;
+}
+.about .contant h3{
+    font-size:30px ;
+    font-weight: 800;
+    line-height:33px ;
+}
+.about .contant span{
+    font-size:14px ;
+    font-weight: 400;
+    line-height:20px ;
+    color: #9da2ac;
+}
+.about .contant p{
+    font-size:15px ;
+    font-weight: 400;
+    line-height:24px ;
+    color: #9da2ac; 
+}
+.about .contant b{
+    font-size:15px ;
+    font-weight: 500;
+    line-height:24px ;
+    color: #768081; 
+
+}
+.about .prog .progress{
+    height: 25px;
+}
+.about .prog .progress-bar{
+    background-color:  var(--main-color) !important;
+    color: white !important;
+}
+.about .prog .progress-bar h6{
+    font-size:13px ;
+    font-weight: 500;
+    line-height:14.3px ;
+}
+.about span.btn{
+    font-size:13px ;
+    font-weight:400 ;
+    line-height: 18.5714px;
+    padding: 10px 30px;
+    border:1px var(--main-color) solid;
+    border-radius: 5px;
+}
+.about span.btn1{
+background-color: var(--main-color) ;
+color: #fff;
+transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.about span.btn1:hover{
+    background-color: white;
+    color: var(--main-color);
+
+}
+.about span.btn2{
+    background-color:white ;
+    color: var(--main-color);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+ }
+.about span.btn2:hover{
+        background-color: var(--main-color);
+        color: white;
+    
+}
+
+/* ========== End about css ============ */
+
+/* ========== start service css ============ */
+.services{
+    background-color: rgba(247, 247, 247, 0.771);
+}
+.services .container{
+/* width: 70% !important; */
+}
+.services .title h3{
+    font-size:40px;
+    line-height:44px ;
+    font-weight:900 ;
+    z-index: 3;
+}
+.services .title {
+    position: relative;
+}
+.services .title::after{
+    content: '';
+    width: 15%;
+    height: 30%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 42%;
+    bottom: 10px;
+    z-index: 0;
+}
+.services .card{
+    border-color:white !important ;
+}
+.services .card h6{
+    font-size:18px ;
+    font-weight:800 ;
+    line-height: 19.8px;
+}
+.services .card p{
+    font-size:14px ;
+    font-weight:400 ;
+    line-height: 22.4px;
+}
+.services .icon{
+    width: 70px;
+    height: 70px;
+    background-color: #f7f7f7;
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.services .card:hover .icon{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.services .icon i{
+    font-size: 25px;
+}
+/* ========== End service css ============ */
+
+/* ========== start portfolio css ============ */
+.portfolio .container{
+    width: 70% !important;
+}
+.portfolio .title h3{
+    font-size:40px;
+    line-height:44px ;
+    font-weight:900 ;
+    z-index: 3;
+}
+.portfolio .title {
+    position: relative;
+}
+.portfolio .title::after{
+    content: '';
+    width: 16%;
+    height: 30%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 42%;
+    bottom: 10px;
+    z-index: 0;
+}
+.portfolio .nav-tabs{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.portfolio .nav-tabs .nav-link{
+    border: none;
+    color: #000;
+    text-transform: capitalize;
+    font-size:16px ;
+    line-height:22.8571px ;
+    font-weight:700 ;
+}
+.portfolio .nav-tabs .nav-item{
+    position: relative;
+}
+.portfolio .nav-tabs .nav-item .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 6px;
+    left: 15px;
+    transition: width 0.5s ease-in-out;
+}
+.portfolio .nav-tabs .nav-item .nav-link.active::after{
+    width: 60%;
+}
+.portfolio .picture{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .picture .portfolio-layer{
+    width: 96%;
+    height: 96%;
+    background-color: #fff;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out ,transform 0.5s ease-in-out;
+}
+.portfolio .picture:hover .portfolio-layer{
+opacity: 1;
+transform: translatey(-4px);
+}
+.portfolio .picture .portfolio-layer .layer-contant .contant h4{
+font-size:15px ;
+font-weight: 700;
+line-height: 9px;
+letter-spacing: 2px;
+}
+
+.portfolio .picture .portfolio-layer .layer-contant .contant {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transition: transform .3s ease-in-out,opacity .3s ease-in-out;
+    opacity: 0;
+    }
+    .portfolio .picture:hover .layer-contant .contant {
+        transform:translatey(30px) ;
+        opacity: 1;
+    }
+    .portfolio .picture .portfolio-layer .layer-contant .layer-icon{
+        width: 35px;
+        height: 35px;
+        background-color: var(--main-color);
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio .picture .portfolio-layer .layer-contant .conter-icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap:7px;
+        position: absolute;
+        top: 62%;
+        left: 0%;
+        transition: opacity 0.5s ease-in-out , transform 0.5s ease-in-out;
+        opacity: 0;
+        }
+        .portfolio .picture:hover .layer-contant .conter-icon{
+            transform:translatey(-35px) ;
+            opacity: 1;
+        }
+
+/* ========== End portfolio css ============ */
+
+/* ========== staer testimonials css ============ */
+.testimonials{
+    background-color:#f7f7f7 ;
+}
+.testimonials .title h3{
+    font-size:40px;
+    line-height:44px ;
+    font-weight:900 ;
+    z-index: 10;
+}
+.testimonials .title {
+    position: relative;
+}
+.testimonials .title::after{
+    content: '';
+    width: 16%;
+    height: 30%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 42%;
+    bottom: 12px;
+    z-index: 0;
+}
+.testimonials .carousel-item img{
+    width: 90px;
+    height: 90px;
+    margin-top: 40px;
+    display: inline;
+    border-radius: 50%;
+}
+.testimonials .carousel-item p{
+    font-size:15px ;
+    font-weight:400 ;
+    line-height: 24px;
+}
+.testimonials .carousel-item h6{
+    font-size:16px ;
+    font-weight:600 ;
+    line-height: 17.6px;
+}
+.testimonials .carousel-item span{
+    padding-bottom: 70px;
+}
+.carousel-indicators [data-bs-target]  {
+    all: unset;
+    text-indent:0 ;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background: #879691;
+    margin-inline:6px ;
+    opacity: .5;
+    cursor:pointer;
+}
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/* ========== End testimonials css ============ */
+
+
+/* ========== start counter css ============ */
+.number .container .nums h3{
+    font-size:30px ;
+    line-height:33px ;
+    font-weight: 900;
+}
+.number .container p{
+    font-size:15px ;
+    line-height:24px ;
+    font-weight: 600;
+    color: #90898a;
+}
+/* ========== End counter css ============ */
+
+
+/* ========== start team css ============ */
+.team{
+    background-color: #f7f7f7;
+}
+.team .title h3{
+    font-size:40px;
+    line-height:44px ;
+    font-weight:900 ;
+    z-index: 2;
+}
+.team .title {
+    position: relative;
+    padding-bottom: 70px;
+}
+.team .title::after{
+    content: '';
+    width: 17%;
+    height: 30%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 42%;
+    bottom: 10px;
+    z-index: 0;
+}
+.team .row{
+    padding-top: 70px;
+}
+.team .card-body{
+    background-color: #5b5b5b;
+    color:#fff;
+}
+.team .img-card{
+    position: relative;
+    overflow: hidden;
+
+}
+.team .img-card img{
+    transition: transform .5s;
+}
+.team .img-card:hover img{
+transform: scale(1.2);
+}
+.team .card .layer{
+    background-color: #fff;
+    width: 97%;
+    height: 97%;
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    transition: transform .5s  , opacity .5s ;
+    opacity: 0;
+}
+.team .card:hover .layer{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.team .card .icon-card{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+.team .card .icon-card:hover{
+    background-color: #fff;
+    color: black;
+}
+.team .card .card-body h4{
+    font-size: 25px;
+    font-weight:500 ;
+    line-height: 27.5px;
+    letter-spacing: 2px;
+}
+.team .card .card-body h5{
+    font-size: 20px;
+    font-weight:700 ;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+/* ========== end team css ============ */
+
+/* ========== start contact css ============ */
+.contact .container{
+    width: 60% !important;
+    padding-bottom: 30px;
+}
+.contact .title h3{
+    font-size:40px;
+    line-height:44px ;
+    font-weight:900 ;
+    z-index: 2;
+}
+.contact .title {
+    position: relative;
+    padding-bottom: 70px;
+}
+.contact .title::after{
+    content: '';
+    width: 18%;
+    height: 30%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 41%;
+    bottom: 10px;
+    z-index: -1;
+}
+.contact .icon{
+    width: 60px;
+    height: 60px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    color:#343434 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition:background-color .5s,color .5s ;
+}
+.contact .icon:hover{
+    background-color:#343434 ;
+    color:#fff ;
+}
+.contact .row h6{
+    font-size:16px ;
+    line-height: 17.6px;
+    font-weight:700 ;
+}
+.contact .row p{
+    font-size:15px ;
+    line-height: 24px;
+    font-weight:400 ;
+    color: #808081;
+}
+ .contact .container .text .name{
+    outline: none;
+    border: none;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+.contact .container .text .email{
+    outline: none;
+    border: none;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+.contact .container form .message{
+    border: none;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 150px;
+    padding-left: 10px;
+    /* padding-top: 54px; */
+    outline: none;
+    resize:horizontal;
+}
+.contact .container form button{
+    padding: 10px 40px;
+    background-color: #343434;
+    color: #fff;
+    border: 1px #343434 solid ;
+    transition:background-color .5s, color .5s;
+    font-size:13px ;
+    font-weight:400 ;
+    line-height:18.5714px ;
+}
+.contact .container form button:hover{
+    background-color: #fff;
+    color:#343434 ;
+}
+/* ========== end contact css ============ */
+
+
+/* ========== start footer css ============ */
+footer{
+    background-color: #1c1c1c;
+     color: #748182;
+    text-align: center;
+    padding:30px 0px;
+    font-size: 13px;
+    line-height: 20.8px;
+    font-weight:400 ;
+    letter-spacing: 1px;
+}
+/* ========== end footer css ============ */
+
+
+
+@media (max-width:767px) {
+    nav .navbar-nav{
+        background-color: white;
+    }
+    nav .navbar-nav .nav-link{
+        color: black !important;
+        text-align: center;
+    }
+    nav .navbar-nav .nav-item{
+    position: relative;
+}
+nav .navbar-nav .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    color: black;
+
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 40% !important;
+    transition: width 0.5s ease-in-out;
+}
+nav .navbar-nav .nav-link.active::after{
+    content: "";
+    width: 20% !important;
+    color: black;
+}
+ 
+.about .container.padding-section{
+    padding: 0px !important;
+}
+.services.padding-section{
+    padding: 0px !important;
+}
+.portfolio.padding-section{
+    padding: 0px;
+}
+.portfolio .container{
+    width: 100% !important;
+}
+.testimonials.padding-section{
+    padding: 0px;
+}
+.number.padding-section{
+    padding: 0px;
+}
+.team.padding-section{
+    padding: 0px;
+}
+.contact .container{
+    width: 100% !important;
+}
+.contact.padding-section{
+    padding: 0;
+}
+}
